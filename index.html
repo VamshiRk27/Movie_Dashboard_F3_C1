@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDB Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+        UI ==>
+                1. Setting up the project. (done)
+                2. Adding input fields and search button.
+                3. Custom spinning loader.
+                4. Result section.
+                5. Error section.
+        JS ==>
+                6. Handle Inputs.
+                7. Fetch Data and setup the API key.
+                8. Display the Loader.
+                9. Handling the response.
+                10.Handling the errors.
+        
+        -> UI after functionality
+                11. Match the Figma Design
+        -> Deployment
+     -->
+
+    <h1 id="header">IMDB MOVIE APP</h1>
+    <div class="search-section">
+        <input type="text" id="apiKey" placeholder="API_KEY">
+        <br>
+        <input type="text" id="movieTitle" placeholder="Search Movie">
+        <br>
+        <button id="search-btn">Search</button>
+    </div>
+    <div class="loader-section">
+        <div class="loader" id="loader"></div>
+    </div>
+    <div id="error-message"></div>
+    <div id="results"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
